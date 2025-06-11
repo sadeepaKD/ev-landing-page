@@ -538,14 +538,12 @@
             }, 3000);
         }
 
-        // Countdown timer
+        // Countdown timer with fixed target date
+        const launchDate = new Date('2025-07-11T00:00:00').getTime(); // Set your actual launch date here
+        
         function updateCountdown() {
-            // Set target date to 30 days from now
-            const now = new Date();
-            const targetDate = new Date(now.getTime() + (30 * 24 * 60 * 60 * 1000));
-            
             const currentTime = new Date().getTime();
-            const distance = targetDate.getTime() - currentTime;
+            const distance = launchDate - currentTime;
 
             if (distance > 0) {
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -564,12 +562,15 @@
                 updateCountdownElement('hours', '00');
                 updateCountdownElement('minutes', '00');
                 updateCountdownElement('seconds', '00');
+                
+                // Optional: Show launch message
+                document.querySelector('.coming-soon-text').textContent = 'LAUNCHED!';
             }
         }
 
         function updateCountdownElement(id, newValue) {
             const element = document.getElementById(id);
-            if (element.textContent !== newValue) {
+            if (element && element.textContent !== newValue) {
                 element.style.transform = 'scale(1.2)';
                 element.style.color = '#FFA500';
                 setTimeout(() => {
