@@ -70,25 +70,26 @@
         }
 
         .logo-container {
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
             animation: logoFloat 3s ease-in-out infinite;
         }
 
         .logo {
-            width: 180px;
-            height: 180px;
-            filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.4));
+            width: 240px;
+            height: 240px;
+            filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.5));
             transition: transform 0.3s ease;
             border-radius: 50%;
         }
 
         .logo:hover {
             transform: scale(1.1) rotate(5deg);
+            filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.7));
         }
 
         @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
+            0%, 100% { transform: translateY(0px); filter: drop-shadow(0 0 30px rgba(255, 255, 255, 0.5)); }
+            50% { transform: translateY(-15px); filter: drop-shadow(0 0 35px rgba(255, 255, 255, 0.6)); }
         }
 
         .main-heading {
@@ -417,8 +418,8 @@
             }
             
             .logo {
-                width: 140px;
-                height: 140px;
+                width: 180px;
+                height: 180px;
             }
         }
     </style>
