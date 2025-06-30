@@ -162,10 +162,10 @@
 
         .features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
             margin-bottom: 3rem;
-            max-width: 900px;
+            max-width: 1200px;
             width: 100%;
             justify-items: center;
         }
@@ -179,7 +179,7 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeInUp 1s ease-out;
             width: 100%;
-            max-width: 280px;
+            max-width: 250px;
             text-align: center;
         }
 
@@ -287,52 +287,6 @@
             background: linear-gradient(45deg, #FFA500, #FFD700);
         }
 
-        .countdown {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 1.5rem;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            min-width: 100px;
-            animation: countdownPulse 2s ease-in-out infinite;
-            transition: all 0.3s ease;
-        }
-
-        .countdown-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
-        }
-
-        @keyframes countdownPulse {
-            0%, 100% { box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); }
-            50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.3); }
-        }
-
-        .countdown-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #FFD700;
-            display: block;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-            transition: all 0.2s ease;
-        }
-
-        .countdown-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         .social-links {
             display: flex;
             gap: 1rem;
@@ -400,19 +354,6 @@
                 padding: 2rem 1.5rem;
             }
             
-            .countdown {
-                gap: 0.8rem;
-            }
-            
-            .countdown-item {
-                min-width: 80px;
-                padding: 1rem 0.8rem;
-            }
-            
-            .countdown-number {
-                font-size: 2rem;
-            }
-            
             .input-group {
                 flex-direction: column;
             }
@@ -438,44 +379,35 @@
         </div>
 
         <h1 class="main-heading">General EV</h1>
-        <p class="subtitle">Revolutionary electric vehicles that will transform the way you drive. Sustainable, powerful, and designed for tomorrow.</p>
+        <p class="subtitle">The People's Electric Bike</p>
         
         <div class="coming-soon-text">Coming Soon</div>
 
-        <div class="countdown">
-            <div class="countdown-item">
-                <span class="countdown-number" id="days">30</span>
-                <span class="countdown-label">Days</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="hours">24</span>
-                <span class="countdown-label">Hours</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="minutes">60</span>
-                <span class="countdown-label">Minutes</span>
-            </div>
-            <div class="countdown-item">
-                <span class="countdown-number" id="seconds">60</span>
-                <span class="countdown-label">Seconds</span>
-            </div>
-        </div>
-
         <div class="features">
             <div class="feature">
-                <span class="feature-icon">⚡</span>
-                <h3>Lightning Fast</h3>
-                <p>0-100 km/h in under 4 seconds with cutting-edge battery technology</p>
+                <span class="feature-icon">🚀</span>
+                <h3>High Performance</h3>
+                <p>Superior speed and acceleration with advanced electric motor technology</p>
             </div>
             <div class="feature">
-                <span class="feature-icon">🌱</span>
-                <h3>100% Sustainable</h3>
-                <p>Zero emissions, maximum impact. Drive towards a greener future</p>
+                <span class="feature-icon">💰</span>
+                <h3>Affordable</h3>
+                <p>Premium quality electric bikes at prices that everyone can afford</p>
             </div>
             <div class="feature">
-                <span class="feature-icon">🔋</span>
-                <h3>Extended Range</h3>
-                <p>Advanced battery technology for longer journeys without compromise</p>
+                <span class="feature-icon">🎨</span>
+                <h3>Modern Designs</h3>
+                <p>Sleek, contemporary styling that turns heads wherever you ride</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔧</span>
+                <h3>Best in Class Build Quality</h3>
+                <p>Robust construction and premium materials for lasting durability</p>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">⭐</span>
+                <h3>Best in Class Specifications</h3>
+                <p>Industry-leading features and technical specifications that exceed expectations</p>
             </div>
         </div>
 
@@ -489,7 +421,7 @@
         </div>
 
         <div class="social-links">
-            <a href="#" class="social-link" title="Follow us on Facebook">
+            <a href="https://www.facebook.com/share/16Yy17odFs/" class="social-link" title="Follow us on Facebook" target="_blank">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
@@ -539,49 +471,6 @@
             }, 3000);
         }
 
-        // Countdown timer with fixed target date
-        const launchDate = new Date('2025-07-11T00:00:00').getTime(); // Set your actual launch date here
-        
-        function updateCountdown() {
-            const currentTime = new Date().getTime();
-            const distance = launchDate - currentTime;
-
-            if (distance > 0) {
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                // Update with animation when values change
-                updateCountdownElement('days', days.toString().padStart(2, '0'));
-                updateCountdownElement('hours', hours.toString().padStart(2, '0'));
-                updateCountdownElement('minutes', minutes.toString().padStart(2, '0'));
-                updateCountdownElement('seconds', seconds.toString().padStart(2, '0'));
-            } else {
-                // Countdown finished
-                updateCountdownElement('days', '00');
-                updateCountdownElement('hours', '00');
-                updateCountdownElement('minutes', '00');
-                updateCountdownElement('seconds', '00');
-                
-                // Optional: Show launch message
-                document.querySelector('.coming-soon-text').textContent = 'LAUNCHED!';
-            }
-        }
-
-        function updateCountdownElement(id, newValue) {
-            const element = document.getElementById(id);
-            if (element && element.textContent !== newValue) {
-                element.style.transform = 'scale(1.2)';
-                element.style.color = '#FFA500';
-                setTimeout(() => {
-                    element.textContent = newValue;
-                    element.style.transform = 'scale(1)';
-                    element.style.color = '#FFD700';
-                }, 100);
-            }
-        }
-
         // Email subscription
         function subscribeEmail() {
             const email = document.getElementById('emailInput').value;
@@ -609,8 +498,6 @@
 
         // Initialize
         createParticles();
-        updateCountdown();
-        setInterval(updateCountdown, 1000);
         setInterval(createLightning, 4000);
 
         // Add enter key functionality to email input
